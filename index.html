@@ -5,33 +5,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>World Timezones</title>
   <link rel="stylesheet" href="src/style.css"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js" ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.43/moment-timezone-with-data-1970-2030.min.js"></script>
 </head>
 <body>
   <div class="container">
     <h1>World Timezones</h1>
 
-    <select>
-      <option calue="">Select a city...</option>
-      <option calue="">Singapore</option>
-      <option calue="">New York</option>
-      <option calue="">Houston</option>
-      <option calue="">London</option>
-      <option calue="">Tokyo</option>
+    <select id="city">
+      <option value="">Select a city...</option>
+      <option value="America/New_York">New York</option>
+      <option value="America/Phoenix">Phoenix</option>
+      <option value="Europe/London">London</option>
+      <option value="Asia/Tokyo">Tokyo</option>
     </select>
-
-    <div class="cities">
+    
+    <div id="cities">
+    <div class="cities" id="seattle">
       <div class="city">
       <h2>Seattle</h2>
-      <div class="date">December 11, 2023</div>
+      <div class="date"></div>
       </div>
-      <div class="time">14:09<small>pm</small></sma></div>
+      <div class="time"></div>
     </div>
-    <div class="cities">
+    <div class="cities" id="singapore">
       <div class="city">
       <h2>Singapore</h2>
-      <div class="date">December 11, 2023</div>
+      <div class="date"></div>
       </div>
-      <div class="time">14:09<small>pm</small></div>
+      <div class="time"></div>
+    </div>
     </div>
 
   </div>
